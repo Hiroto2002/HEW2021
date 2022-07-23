@@ -1,0 +1,1102 @@
+/* 全体 */
+*{
+    /* background-color: red; */
+    box-sizing: border-box;
+    /*padding,borderを高さや幅に含める*/
+}
+
+body{
+    margin: 0px;
+}
+
+a{
+    /* color:rgb(247, 120, 1); */
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.wrap{
+    width: 98vw;
+    text-align: center;
+    /* margin: 0 auto 0 auto; */
+    margin-bottom: 17.5vh;
+}
+
+main{
+    text-align: center;
+}
+
+.form{
+    display: inline-block;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.6rem;
+}
+
+.form dt{
+    margin-top: 10px;
+}
+
+.form dd{
+    margin:10px 0 5px 0;
+    font-weight: bold;
+}
+
+.back{
+    font-size: 20px;
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+}
+.back_text{
+    font-size: 1.1rem;
+    position: fixed;
+    top: 40px;
+    left:20px;
+    color: #ddd;
+    background-color: #222;
+    border-radius: 7px;
+    padding: 10px;
+    display: none;
+}
+
+/* login.php */
+#login {
+    background-color: #fff;
+    box-shadow: 0 0 5px;
+    height: 97%;
+    width: 170vh;
+    border-radius: 1%;
+    overflow: hidden;
+}
+
+#login_box_left{
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.login_logo{
+    position: relative;
+    top: 20px;
+    left: 50px;
+    width: 250px;
+    z-index: 99;
+}
+#login_box_left .phone{
+    position: relative;
+    top: -80px;
+    left: 50px;
+    width: 350px;
+    transform: rotate( 90deg );
+}
+#login_box_left .site{
+    position: absolute;
+    top: 213px;
+    left: 122px;
+    width: 69%;
+    height: 183px;
+    object-fit: contain;
+    }
+
+
+#login_box_right{
+    position: relative;
+    top: 8px;
+    right: 60px;
+    float: right;
+    padding: 0 20px;
+    box-shadow: 0 0 1px #222;
+    border-radius: 10px;
+}
+
+#sale_timeline{
+    padding-top: 50px;
+}
+
+.title{
+    text-align: center;    
+}
+
+
+
+.img_area img{
+    width: 110px;
+    height: 110px; 
+    display: block;
+    /* 中央による */
+    margin-left: auto;
+    margin-right: auto;
+}
+.link li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 25px 0 0 0; 
+}
+
+.error{
+    font-weight: normal;
+    color: red;
+}
+
+
+.check{
+    width: 200px;
+}
+/*complete*/
+.modal-pop{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9997!important;
+}
+.bg{
+    background-color: #1119;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9998!important;
+}
+.modal-pop img{
+    height:50vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index:9999!important;
+}
+
+/* index.php */
+.memberAdd{
+    background-color: #fff;
+    box-shadow: 0 0 5px;
+    height: 95%;
+    width: 90vh;
+    padding: 50px;
+    border-radius: 1%;
+    overflow: auto;
+}
+
+
+.index_back {
+    font-size: 1.1rem;
+    position: fixed;
+    top: 40px;
+    left: 400px;
+}
+
+.index_back_text{
+    font-size: 1.1rem;
+    position: fixed;
+    top: 75px;
+    left: 400px;
+    color: #ddd;
+    background-color: #222;
+    border-radius: 7px;
+    padding: 10px;
+    display: none;
+}
+
+
+
+
+
+/*TL*/
+
+.timeline-header{
+    background-image: url("../image/timeline_header.png");
+    background-size: cover;
+    filter: blur(0.8);
+    width: 50vw;
+    height: 25vw;
+    margin: 5vh auto;
+    color: #fff;
+    position: relative;
+    text-shadow: 2px 2px 50px rgb(0, 0, 0);
+    border-radius: 30px;
+
+}
+.timeline-header h2{
+    position: absolute;
+    top: 20vh;
+    left: 11vw;
+    font-size: 3.0vw;
+}
+
+.timeline-header::before{
+    content: ' ';
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px;
+}
+#logo{
+    position: absolute;
+    top: -3px;
+    right: 62px;
+}
+
+.timeline-header h2 span{
+    color: rgb(253, 121, 33);
+
+}
+.timeline-header p{
+    position: absolute;
+    top: 28vh;
+    left: 15vw;
+    font-size: 1.5vw;
+    text-shadow: 2px 2px 2px #000;
+}
+
+#tl_title{
+    margin: 25vh 0 10vh 0;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #555;
+}
+
+/*========= スクロールダウンのためのCSS ===============*/
+
+/*=== 9-1-2 丸が動いてスクロールを促す ====*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown2{
+    /*描画位置※位置は適宜調整してください*/
+  position:absolute;
+  bottom:19vh;
+  left:50%;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown2 span{
+    /*描画位置*/
+  position: absolute;
+  left:10px;
+  bottom:10px;
+    /*テキストの形状*/
+  color: #222;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 丸の描写 */
+.scrolldown2:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom:0;
+    left:-4px;
+    /*丸の形状*/
+  width:10px;
+  height:10px;
+  border-radius: 50%;
+  background:#222;
+    /*丸の動き1.6秒かけて透過し、永遠にループ*/
+  animation:
+    circlemove 1.6s ease-in-out infinite,
+    cirlemovehide 1.6s ease-out infinite;
+}
+
+/*下からの距離が変化して丸の全体が上から下に動く*/
+@keyframes circlemove{
+      0%{bottom:45px;}
+     100%{bottom:-5px;}
+ }
+
+/*上から下にかけて丸が透過→不透明→透過する*/
+@keyframes cirlemovehide{
+      0%{opacity:0}
+     50%{opacity:1;}
+    80%{opacity:0.9;}
+  100%{opacity:0;}
+ }
+
+/* 線の描写 */
+.scrolldown2:after{
+  content:"";
+    /*描画位置*/
+  position: absolute;
+  bottom:0;
+  left:0;
+    /*線の形状*/
+  width:2px;
+  height: 50px;
+  background:#222;
+}
+
+
+
+
+/*上*/
+
+.g-nav1_wrap li{
+    transition: all 0.3s ease;
+    list-style: none;
+
+}
+
+.g-nav1_wrap li img{
+    /* display:block; */
+    text-decoration: none;
+    background-color: rgb(255, 187, 61);
+    border-radius: 50%;
+} 
+
+
+.plus {
+    list-style: none;
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+    font-size: 30px;
+    line-height: 0;
+    z-index: 99;
+}
+
+.plus a {
+    background: rgb(255, 187, 61);
+    text-decoration: none;
+    color: #000;
+    width: 50px;
+    height: 50px;
+    padding: 25px 0;
+    text-align: center;
+    display: block;
+    border-radius: 100px;
+    opacity: 1.0;
+    transition: all .3s ease;
+}
+.plus a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.search {
+    z-index: 10;
+    position: fixed;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    transition: all .3s ease;
+}
+.search-cancel {
+    display: none;
+    z-index: 10;
+    position: fixed;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    transition: all .3s ease;
+}
+
+.search:hover {
+    opacity: 0.7;
+}
+
+.invisible-search{
+    display: none;
+    position: fixed;
+    left: 10px;
+    z-index: 9;
+
+}
+.tl-search{
+    margin: 0 0 0 50px;
+    width: 570px;
+    height: 50px;
+    z-index: 99;
+}
+
+.tl-search-btn{
+    margin: 0 0 0 -50px;
+    width: 50px;
+    transition: all .3s ease;
+    z-index: 99;
+
+}
+.tl-search-btn:hover{
+    opacity: 0.5;
+}
+
+.cart {
+    position: fixed;
+    right: 10px;
+    top: 0;
+    line-height: 0;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    opacity: 1.0;
+    transition: all .3s ease;
+    z-index: 99;
+}
+.cart:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+
+/*商品画像*/
+.sale table td{
+position: relative;
+}
+
+.tl_product{
+    position: relative;
+}
+
+.sale #sale{
+    margin: 10px;
+    width: 23.118vw;
+    height: 23.118vw;
+    object-fit: cover;
+    border-radius: 4%;
+    position: relative;
+}
+
+.price p{
+    color: #fff;
+    position: absolute;
+    top: 266px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    border-radius: 20px 0 0 20px;
+    padding: 5px 0;
+}
+    
+.cancel{
+    filter: opacity(0.9);
+    display: none;
+    margin: 0 0px 43vh -24vw;
+    width: 50px;
+
+}
+
+/* 商品詳細 */
+#sale-detail{
+    width: 24.68vw;
+    height: 177.69px;
+    object-fit: cover;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+/*下*/
+.g-nav2_wrap {
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100px; 
+    padding: 10px;
+    background-color: rgb(268, 231, 149);
+}
+
+.g-nav2_wrap li{
+    transition: all 0.3s ease;
+    list-style: none;
+}
+
+
+.g-nav2_wrap li p{
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+
+.home{
+    position: fixed;
+    bottom: 0;
+    right: 81.7vw;
+    width: 80px;
+    height: 80px;
+    padding:10px 0 25px 0;
+    margin: 0 13px 10px 0;
+    transition: all .3s ease;
+    border-radius: 15%;
+}
+.home:hover{
+    opacity: 0.5;
+}
+
+.home_title {
+    position: fixed;
+    bottom: 5px;
+    right: 83vw;
+    line-height: 0;
+    margin: 15px;
+    transition: all .3s ease;
+    border-radius: 15%;
+    color: #000;
+}
+
+.dm{
+    position: fixed;
+    bottom: 0;
+    right: 56vw;
+    width: 80px;
+    height: 80px;
+    padding-bottom: 0;
+    margin: 15px 13px 10px 15px;
+    transition: all .3s ease;
+    border-radius: 15%;
+}
+.dm:hover {
+    opacity: 0.5;
+}
+
+.dm_title {
+    position: fixed;
+    bottom: 5px;
+    right: 57.8vw;
+    line-height: 0;
+    margin: 15px 18px;
+    transition: all .3s ease;
+    border-radius: 15%;
+    color: #555;
+}
+
+.rank{
+    position: fixed;
+    bottom: 0;
+    left: 56vw;
+    width: 80px;
+    height: 80px;
+    padding-top:5px;
+    margin-bottom:10px;
+    transition: all .3s ease;
+    border-radius: 15%;
+}
+.rank:hover {
+    opacity: 0.5;
+}
+
+.rank_title {
+    position: fixed;
+    bottom: 5px;
+    left: 56.4vw;
+    line-height: 0;
+    margin: 15px;
+    transition: all .3s ease;
+    border-radius: 15%;
+    color: #000;
+}
+
+.prof {
+    position: fixed;
+    bottom: 0;
+    left: 82vw;
+    width: 80px;
+    height: 80px;
+    padding: 0px 0 0px 0;
+    margin: 0px 0px 10px 0;
+    transition: all .3s ease;
+    border-radius: 15%;
+}
+
+.prof:hover{
+    opacity: 0.5;
+}
+
+.profile_title {
+    position: fixed;
+    bottom: 5px;
+    left: 81.3vw;
+    line-height: 0;
+    margin: 15px;
+    transition: all .3s ease;
+    border-radius: 15%;
+    color: #000;
+}
+
+
+/* rank.php */
+
+.Tiara{
+    position: absolute;
+    margin: 0 0 0 0;
+    z-index: 99;
+}
+#gold{
+    left: 0px;  
+}
+#silver{
+    left: 32.9vw;    
+}
+#bronze{
+    left: 65.8vw;    
+}
+.sale #rank_sale{
+    margin: 10px;
+    width: 31.34vw;
+    height: 23.118vw;
+    object-fit: cover;
+    border-radius: 4%;
+    position: relative;
+}
+
+
+.rank_box{
+    position: relative;
+}
+
+.rank_price{
+    color: #fff;
+    width: 100px;
+    position: relative;
+    top: 220px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    margin: 0px 0px 0px -422px;
+    border-radius: 20px 20px 20px;
+}
+
+
+/*cart.php*/
+
+.dust {
+    z-index: 10;
+    width: 60px;
+    list-style: none;
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+    display:block;
+    text-decoration: none;
+    background-color: rgb(230, 89, 89) !important;
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+
+.invisible-dust {
+    width: 60px;
+    list-style: none;
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+    display:block;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+
+/* dm_select.php */
+
+#dm_title{
+    margin-bottom: 40px;
+}
+
+#dm_title span{
+    font-weight: bold;
+    color: #555;
+    font-size: 2.0rem;
+    /* border-bottom: 2px solid rgb(253, 121, 33); */
+}
+
+#dm-select{
+    padding-top: 55px;
+    margin-bottom: 100px
+}
+#dm-select a{
+    text-decoration: none;
+}
+
+.dm-account{
+    box-shadow: 0px 1px 1px rgb(190, 187, 187);
+    text-align: left;
+}
+
+.dm-account-right{
+    text-align: right;
+}
+
+.dm-account-right div{
+    max-width: 50%;
+    text-align: center;
+}
+
+.dm-account:hover{
+    opacity: 0.5;
+}
+.dm-account  p{
+    color: #000;
+}
+
+
+.yname{
+    display: inline-block;
+    font-size: 2.0rem;
+    margin: 0 0 35px 70px;
+    
+}
+.new_text{
+    display: inline-block;
+    font-size: 2.0rem;
+    margin: 0 0 35px 250px;
+    color: #aaa;
+}
+
+/* dm.php */
+.submit{    
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0px;
+    height: 55px;
+    width: 100%;
+    background: rgb(243, 198, 114);
+
+}
+
+.submit input{    
+    font-size: large;
+}
+
+.dm-icon{
+    position: relative;
+    left:50px;
+    padding: 10px;
+    height:100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.dm-icon-right{
+    position: relative;
+    right:50px;
+    padding: 10px;
+    height:100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.dm_text_right{
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 55px;
+    background-color: rgb(149, 245, 125);
+    margin: 0 20%;
+    border-radius: 15px;
+}
+.dm_text_left{ 
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 55px;
+    background-color: rgb(220, 224, 218);
+    margin: 0 20%;
+    border-radius: 15px;
+}
+
+
+/* rank.php */
+
+.rank-icon{
+    filter: opacity(0.9);
+    margin: 0 -30px 90px 20px;
+    width: 50px;
+}
+
+/* prof.php */
+
+.prof-edit{
+    font-size: 2.0rem;
+    list-style: none;
+    line-height: 3.0rem;
+}
+.prof-edit li{
+    line-height: 3.6em;
+}
+.prof-edit a{
+    text-decoration: none;
+}
+.prof-edit p{
+    color: rgb(230, 89, 89);
+}
+#profile-icon{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin:  50px 0 0 0;
+    border-radius: 30%;
+    /* filter: sepia(); */
+}
+#prof-sale{
+    margin-right: 30px;
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 30%;
+}
+
+/* タブ */
+/*tabの形状*/
+        .tab{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .tab li a{
+            display: block;
+            background:#ddd;
+            margin:0 2px;
+            padding: 10px 15vw;
+        }
+        /*liにactiveクラスがついた時の形状*/
+        .tab li.active a{
+            background:#fff;
+        }
+        
+        
+        /*エリアの表示非表示と形状*/
+        .area {
+            display: none;/*はじめは非表示*/
+            opacity: 0;/*透過0*/
+            background: #fff;
+            padding:50px 20px;
+        }
+        
+        /*areaにis-activeというクラスがついた時の形状*/
+        .area.is-active {
+            display: block;/*表示*/
+            animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes displayAnime{
+            from {
+            opacity: 0;
+            }
+            to {
+            opacity: 1;
+            }
+        }
+
+        .wrapper{
+            width:100%;
+            max-width: 960px;
+            margin:30px auto;
+        }
+        
+        .area h2{
+            font-size:1.3rem;
+            margin:0 0 20px 10px;
+        }
+        
+        .area li{
+            padding: 10px; 
+            border-bottom: 1px solid #ddd;
+        }
+
+/* listing.php */
+.listing-header{
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 10%; 
+    height: 45px; 
+    padding: 10px;
+    background-color: #fff;  
+    z-index: 999;
+}
+.draft{
+    font-size: 20px;
+    display: inline;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+.draft a{
+    text-decoration: none;
+}
+#buy_btn{
+    display: none;
+}
+
+#listing-btn{
+    text-align: center;   
+} 
+#listing-btn input:first-child{
+    width: 122px;
+    margin: 50px 0 20px 0;
+}
+
+/* listing-sale.php */
+
+#prof-icon{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* listing-detail */
+.sale-delete{
+    margin: 0 0 -20px 100px;
+    padding: 8px;
+    z-index: 10;
+    width: 50px;
+    background-color: rgb(230, 89, 89);
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+
+#accent{
+    color: red;
+    font-size: 1.4rem;;
+}
+
+.sale-icon{
+    margin: 15px 50px 0px 0px;
+    vertical-align: middle;
+    object-fit: cover;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100%;
+}
+
+.sale-title{
+    padding: 0 21% 0 0;
+}
+.sale-cart{
+    margin: 0 0 -20px 100px;
+    padding: 8px;
+    z-index: 10;
+    width: 50px;
+    background-color: rgb(255, 187, 61);
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+
+.edit_btn{
+    margin-top: 38px;
+}
+
+.delete_check{
+    margin-top: 40px;
+}
+
+.delete_check input{
+    font-size: large;
+}
+
+#check{
+    margin-top: 38vh;
+    font-size: 3.0rem;
+}
+
+#delete_box{
+    box-shadow: 0px 0px 10px #000;   
+    text-align: center;
+    width: 40vw;
+    margin-left: 30vw;
+    padding-bottom: 3vh;
+}
+#delete_box input{
+    font-size: 2.0rem;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../image/login.jpg") center center;
+    background-size: cover;
+    }
+
+/* 動きのある出現 */
+    .fadeUp{
+        animation-name:fadeUpAnime;
+        animation-duration:0.5s;
+        animation-fill-mode:forwards;
+        opacity:0;
+        }
+        
+        @keyframes fadeUpAnime{
+        from {
+            opacity: 0;
+        transform: translateY(100px);
+        }
+        
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+        
+        
+        /*ふわっと表示*/
+        
+        .fadeUpTrigger{
+            opacity: 0;
+        }
+
+        .listing-submit{
+            margin-bottom: 40px;
+            display: inline-block;
+        }
+
+        /* スクロールバー*/
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        /* 背景 */
+        ::-webkit-scrollbar-track {
+            border-radius: 5px;
+            height: 10px;
+        }
+
+        /* つまみ */
+        ::-webkit-scrollbar-thumb {
+            background: #aaa;
+            border-radius: 5px;
+        }
+
+        footer{
+            text-align: center;
+            color: #000;
+            margin: 25vh 0 0 0;
+            background-color: #eee;
+        }
+        footer span{
+            position: relative;
+            left: 330px;
+        }
+        footer img{
+            position: relative;
+            left: 210px;
+        }
+
+        #dm_footer{
+            margin: 56.0vh 0 0 0;
+        }
+
+        
